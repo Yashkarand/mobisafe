@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobiSafe | Premium Mobile Sales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #007AFF;
+            --secondary: #5856D6;
+            --accent: #FF2D55;
+            --bg-dark: #000000;
+            --bg-glass: rgba(255, 255, 255, 0.05);
+            --text-main: #ffffff;
+            --text-dim: #a1a1a1;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 2rem;
+            background: radial-gradient(circle at top right, rgba(0, 122, 255, 0.1), transparent);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 600px;
+            filter: drop-shadow(0 20px 50px rgba(0, 122, 255, 0.4));
+            animation: float 6s infinite ease-in-out;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-glass);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .hero-content p {
+                margin: 0 auto 2.5rem;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+        }
+    </style>
+    <script id="retell-widget" src="https://dashboard.retellai.com/retell-widget.js" type="module"
+        data-public-key="public_key_09bc6d380fcd3a2e1c171" data-agent-id="agent_09b1dea9550370e320204d1cdc"
+        data-widget="callback" data-phone-number="+19136751496" data-title="Request a Call" data-countries="US,CA,GB,IN"
+        data-tc="privacy.html" data-color="#FFA07A"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">MOBISAFE</div>
+        <div class="nav-links">
+            <a href="#" class="btn btn-primary">Shop Now</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Next-Gen Mobile Sales.</h1>
+                <p>Experience the future of mobile technology with our curated collection of premium smartphones. Sleek
+                    design meets ultimate power.</p>
+                <a href="#" class="btn btn-primary">Discover More</a>
+            </div>
+            <div class="hero-image">
+                <img src="./premium_smartphone_hero_1769687103246.png" alt="Premium Smartphone">
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Premium Build</h3>
+            <p>Crafted with aerospace-grade materials for durability and elegance that lasts.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Elite Performance</h3>
+            <p>Powered by the latest chips to handle even the most demanding tasks with ease.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Stunning Cameras</h3>
+            <p>Capture every moment with professional-grade sensors and AI-enhanced processing.</p>
+        </div>
+    </section>
+
+    <footer
+        style="padding: 4rem 10%; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; color: var(--text-dim);">
+        <p>&copy; 2026 MobiSafe Digital. All rights reserved.</p>
+        <p style="margin-top: 1rem;"><a href="privacy.html"
+                style="color: var(--text-dim); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;"
+                onmouseover="this.style.color='#007AFF'" onmouseout="this.style.color='#a1a1a1'">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
